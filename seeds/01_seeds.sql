@@ -7,12 +7,12 @@ VALUES
 INSERT INTO properties (
   owner_id, title, description, thumbnail_photo_url, cover_photo_url,
   cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms,
-  country, street, city, province, post_code
+  country, street, city, province, post_code, active
 )
 VALUES
-  (1, 'Downtown Loft', 'A modern loft in downtown.', 'thumb1.jpg', 'cover1.jpg', 15000, 1, 1, 1, 'Canada', '123 King St', 'Toronto', 'ON', 'M5V 1E1'),
-  (2, 'Lakeview Cottage', 'Cozy cottage with a lake view.', 'thumb2.jpg', 'cover2.jpg', 20000, 2, 2, 3, 'Canada', '456 Lake Rd', 'Kelowna', 'BC', 'V1Y 1A1'),
-  (1, 'Urban Condo', 'Stylish condo near amenities.', 'thumb3.jpg', 'cover3.jpg', 18000, 1, 1, 2, 'Canada', '789 Queen St', 'Montreal', 'QC', 'H3Z 2Y7');
+  (1, 'Downtown Loft', 'A modern loft in downtown.', 'thumb1.jpg', 'cover1.jpg', 15000, 1, 1, 1, 'Canada', '123 King St', 'Toronto', 'ON', 'M5V 1E1', TRUE),
+  (2, 'Lakeview Cottage', 'Cozy cottage with a lake view.', 'thumb2.jpg', 'cover2.jpg', 20000, 2, 2, 3, 'Canada', '456 Lake Rd', 'Kelowna', 'BC', 'V1Y 1A1', TRUE),
+  (1, 'Urban Condo', 'Stylish condo near amenities.', 'thumb3.jpg', 'cover3.jpg', 18000, 1, 1, 2, 'Canada', '789 Queen St', 'Montreal', 'QC', 'H3Z 2Y7', TRUE);
 
 INSERT INTO reservations (start_date, end_date, property_id, guest_id)
 VALUES
